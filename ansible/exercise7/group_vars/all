@@ -1,0 +1,7 @@
+#variables for all host
+
+usrnm: globaluser
+comm: value from the group/vars directory
+db_user: testadmin
+db_password: admin123
+db_name: redhat

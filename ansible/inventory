@@ -1,0 +1,18 @@
+web01 ansible_host=192.168.3.27 ansible_user=vagrant ansible_ssh_private_key_file=id_rsa
+web02 ansible_host=192.168.3.28 ansible_user=vagrant ansible_ssh_private_key_file=id_rsa
+web03 ansible_host=192.168.3.31 ansible_user=vagrant ansible_ssh_private_key_file=id_rsa
+
+[server]
+web01
+web02
+
+[db]
+web03
+
+[all_group:children]
+db
+server
+
+[all_group:vars]
+ansible_user=vagrant 
+ansible_ssh_private_key_file=id_rsa

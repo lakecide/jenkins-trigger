@@ -1,0 +1,16 @@
+---
+- name: Learning fact variables
+  hosts: all
+  tasks:
+   - name: Print OS names
+     debug:
+       var: ansible_distribution
+
+   - name: access some vars
+     debug:
+       var: ansible_all_ipv4_addresses[1]
+
+   - name: linux mode check
+     debug:
+       var: ansible_selinux.mode
+

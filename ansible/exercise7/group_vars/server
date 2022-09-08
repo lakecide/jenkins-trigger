@@ -1,0 +1,4 @@
+#variables for web groups
+
+usrnm: serveruser
+comm: value from the group/server directory

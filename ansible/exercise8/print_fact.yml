@@ -1,0 +1,8 @@
+---
+- name: Learning fact variables
+  hosts: all
+  tasks:
+   - name: Print OS names
+     debug:
+       var: ansible_distribution
+

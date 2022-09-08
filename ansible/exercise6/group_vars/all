@@ -1,0 +1,5 @@
+#variables for all host
+
+db_user: testadmin
+db_password: admin123
+db_name: redhat
